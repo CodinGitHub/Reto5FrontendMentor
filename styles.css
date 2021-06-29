@@ -4,51 +4,49 @@
   --SoftMagenta: hsl(300, 69%, 71%);
 }
 *{
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
-  background-color: var(--Violet);
-  background-image: url(images/bg-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: 100%; 
   font-family: 'Open Sans', sans-serif;
   color: white;
+  background-color: var(--Violet);
+  background-image: url(/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main{
   width: 595px;
   height: 1448px;
   margin: 75px auto 40px;
 }
-/*------------------ SECCION UNO ------------------ */
+
+/* --------------- SECCION UNO ----------*/
 #seccion1{
   height: 724px;
 }
 #logo-container{
-  height: 180px;
+  width: 180px;
 }
 #mockup{
   width: 595px;
 }
-/* ------------------ SECCION DOS ------------------ */
+/* --------------- SECCION DOS ----------*/
 #seccion2{
   height: 724px;
 }
 h1{
-  /* margin: 0 auto 0; */
   font-family: 'Poppins', sans-serif;
-  /* padding: 0 40px; */
-  height: 170px; 
   font-size: 46px;
   text-align: center;
+  height: 170px;
 }
 #seccion2 p{
-  /* margin: 0px; */
-  height: 276px;
   font-size: 31px;
   text-align: center;
-}
+  height: 280px;
+} 
 .btn-register{
   text-align: center;
   margin-bottom: 122px;
@@ -57,7 +55,7 @@ h1{
   width: 400px;
   height: 86px;
   border-radius: 50px;
-  font-size: 25px; 
+  font-size: 25px;
   color: var(--Violet);
   background-color: white;
   display: inline-block;
@@ -68,39 +66,37 @@ h1{
   background-color: var(--SoftMagenta);
   color: white;
 }
-
-.redes-contenedor{
-  height: 60px; 
+.social-container{
   text-align: center;
 }
 .redes{
   width: 208px;
   display: inline-flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 .redes a{
-  text-decoration: none;
   border: 2px solid white;
+  text-decoration: none;
   color: white;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   font-size: 28px;
-  text-align: center;
   padding-top: 12px;
 }
 .redes a:hover{
   border-color: var(--SoftMagenta);
   color: var(--SoftMagenta);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: var(--SoftMagenta); }
+.attribution a { color: var(--SoftMagenta) }
 
 @media only screen and (min-width:1284px){
   body{
-    background-image: url(images/bg-desktop.svg);
+    background-image: url(/images/bg-desktop.svg);
+    background-size: unset;
   }
   main{
     margin: 60px auto 0px;
@@ -109,8 +105,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
-  /*------------------ SECCION UNO ------------------ */
+  /* --------------- SECCION UNO ----------*/
   #seccion1{
     width: 753px;
     height: 700px;
@@ -121,13 +116,13 @@ h1{
   #mockup{
     width: 696px;
   }
-  /* ------------------ SECCION DOS ------------------ */
+  /* --------------- SECCION DOS ----------*/
   #seccion2{
     height: 700px;
   }
   h1{
     margin-top: 165px;
-    height: 133px; 
+    height: 133px;
     font-size: 39px;
     text-align: left;
     padding-right: 93px;
@@ -144,12 +139,12 @@ h1{
   }
   .btn-register a{
     width: 200px;
-    height: 58px; 
-    font-size: 20px; 
+    height: 58px;
+    font-size: 20px;
     padding-top: 14px;
     text-align: center;
   }
-  .redes-contenedor{
+  .social-container{
     text-align: right;
   }
   .redes{
@@ -159,6 +154,7 @@ h1{
     width: 44px;
     height: 44px;
     font-size: 22px;
-    padding-top: 8px;
+    padding: 8px;
+    text-align: center;
   }
 }
